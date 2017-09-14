@@ -1,0 +1,46 @@
+<div class="col-sm-offset-2" ng-show="!isLogined">
+    <div class="login_main">
+        <div class="login_logo">
+            <h2><img src="logo/logo_school.png"></h2>
+        </div>
+        <div class="login_left">
+            <img src="logo/login_pic.png">
+        </div>
+        <div class="login_right">
+            <form class="form-horizontal">
+                <div class="form-group" style="MARGIN-TOP:92px">
+                    <label for="username" class="col-sm-3 control-label">用户名</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="username" ng-model="username" placeholder="用户名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">密 码</label>
+                    <div class="col-sm-5">
+                        <input type="password" class="form-control" id="password" ng-model="password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">身份</label>
+                    <div class="col-sm-8">
+                        <label class="radio-inline">
+                            <input type="radio" name="identify" ng-model="identify"  id="stu" value="1"> 学生
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="identify" ng-model="identify" id="tea" value="0"> 教师
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3 col-sm-offset-2">
+                        <button type="button" class="btn btn-block btn-{{btnStyle}}" ng-click="loginCheck();">登录</button>
+                        <span class="login-error">{{errormsg}}</span>
+                    </div>
+                </div>
+                <!--<div class="text-center" ng-if="errormsg">-->
+                    <!--<span class="login-error">{{errormsg}}</span>-->
+                <!--</div>-->
+            </form>
+        </div>
+    </div>
+</div>

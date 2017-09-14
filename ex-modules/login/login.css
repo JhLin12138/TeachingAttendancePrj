@@ -1,0 +1,40 @@
+
+.login_logo {
+    width: 891px;
+    margin-top: 30px;
+    text-align: left;
+    min-height: 90px;
+}
+.login_logo h2, .login_logo h3 {
+    margin-top: 20px;
+    float: left;
+}
+
+.login_left {
+    float: left;
+    height: 340px;
+    width: 426px;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+.form-horizontal{
+    margin-top:40px;
+}
+
+.login_right {
+    float: left;
+    height: 340px;
+    width: 462px;
+    background: url(img/login_right.jpg) no-repeat;
+    text-align: left;
+}
+.login-error{
+    font-size: 10px;
+    color: red;
+    /*font-weight: bold;*/
+}
+.text-center{
+    margin-top: 2px;
+}
