@@ -1,0 +1,13 @@
+body{
+    background-color: #444;
+    font-family: sans-serif,微软雅黑;
+}
+
+.container-fluid{
+    padding: 0px;
+
+}
+
+div {
+    display: block;
+}
