@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eduApp">
+<head>
+    <meta charset="UTF-8">
+    <title>教务管理系统</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+
+    <script src="app/appModule.js"></script>
+    <script src="app/appController.js"></script>
+    <script src="ex-modules/login/loginModule.js"></script>
+    <script src="ex-modules/login/loginController.js"></script>
+    <script src="ex-modules/login/loginDirective.js"></script>
+
+    <script src="ex-modules/student/stuMain/stuModule.js"></script>
+    <script src="ex-modules/student/stuMain/stuController.js"></script>
+    <script src="ex-modules/student/stuMain/stuDirective.js"></script>
+
+    <script src="app/appRouteConfig.js"></script>
+    <link rel="stylesheet" href="ex-modules/login/login.css">
+    <link rel="stylesheet" href="ex-modules/student/stuMain/stuCss.css">
+
+
+</head>
+<body ng-controller="eduCtrl">
+    <div class="containter-fluid">
+        <div ng-view></div>
+    </div>
+</body>
+</html>
