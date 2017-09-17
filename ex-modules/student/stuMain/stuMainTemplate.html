@@ -1,18 +1,20 @@
 <div>
-        <div class="stu-stuTitle">
-
-            <div class="title-left">
-                欢迎 {{user.stuname}}
-            </div>
-
-            <div class="col-sm-6 col-sm-offset-2 col-xs-12">
-                <span class="stu-signcnt col-sm-3" data-toggle="tooltip"
-                      data-placement="top" title="查看历史签到信息">
-                        正常签到：<span class="badge">{{normalCnt}}</span>
-                </span>
-                <span class="stu-signcnt col-xs-12 col-sm-3">迟到：<span class="badge">{{lateCnt}}</span></span>
-                <span class="stu-signcnt col-xs-12 col-sm-3">缺勤：<span class="badge">{{absenceCnt}}</span></span>
-            </div>
-            <div><button type="button" class="btn btn-link" ng-click="quitSys();">退出登录</button></div>
+    <div class="stu-stuTitle">
+        <div class="title-left">
+            欢迎 {{user.stuname}}
         </div>
+
+        <div class="col-sm-6 col-sm-offset-2 col-xs-12">
+            <span class="stu-signcnt col-sm-3" data-toggle="tooltip"
+                  data-placement="top" title="查看历史签到信息">
+                   正常签到：<span class="badge">{{normalCnt}}</span>
+            </span>
+            <span class="stu-signcnt col-xs-12 col-sm-3">迟到：<span class="badge">{{lateCnt}}</span></span>
+            <span class="stu-signcnt col-xs-12 col-sm-3">缺勤：<span class="badge">{{absenceCnt}}</span></span>
+        </div>
+        <div><button type="button" class="btn btn-link" ng-click="quitSys();">退出登录</button></div>
+    </div>
+    <div class="col-xs-12 stu-course-list">
+        <stu-sign-btn ng-repeat="course in courses"></stu-sign-btn>
+    </div>
 </div>

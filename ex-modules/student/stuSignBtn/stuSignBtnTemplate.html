@@ -1,0 +1,8 @@
+<div>
+    <button class="btn btn-lg col-xs-12 sign-btn" style="margin-top: 15px;"
+             ng-class="{'未开始': 'btn-primary', '正常签到': 'btn-success','迟到':'btn-warning','缺勤':'btn-danger'}[signState]">
+        {{course.coursename}}({{course.teaname}})<br><br>
+        {{today}}&nbsp;&nbsp;<span class="beginTime">{{course.begintime}}</span>-<span class="endTime">{{course.endtime}}</span>
+        （{{signState}}）
+    </button>
+</div>
