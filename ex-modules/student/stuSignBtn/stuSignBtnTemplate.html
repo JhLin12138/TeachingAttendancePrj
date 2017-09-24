@@ -1,8 +1,8 @@
 <div>
     <button class="btn btn-lg col-xs-12 sign-btn" style="margin-top: 15px;"
-             ng-class="{'0': 'btn-primary', '1': 'btn-success','2':'btn-warning','3':'btn-danger'}[state]">
+             ng-class="{'待签到': 'btn-primary', '已签到': 'btn-success','迟到':'btn-warning','缺勤':'btn-danger'}[state]">
         {{course.coursename}}({{course.teaname}})<br><br>
         {{today}}&nbsp;&nbsp;<span class="beginTime">{{course.begintime}}</span>-<span class="endTime">{{course.endtime}}</span>
-        {{signState}}
+        {{state}}{{signState}}
     </button>
 </div>
